@@ -1,5 +1,22 @@
 # @backstage/cli
 
+## 0.7.0
+
+### Minor Changes
+
+- 532bc0ec0: Upgrading to lerna@4.0.0. This changes the interface for importing, and because we can't run multiple versions of lerna, this is a breaking change.
+
+  You'll need to update your root `package.json` like the following:
+
+  ```diff
+  -     "lerna": "^3.20.2",
+  +     "lerna": "^4.0.0",
+  ```
+
+### Patch Changes
+
+- 9337f509d: Tweak error message in lockfile parsing to include more information.
+
 ## 0.6.0
 
 ### Minor Changes
